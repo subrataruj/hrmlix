@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".DashFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+       android:background="#0E1F33"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="120dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="-10dp"
+            android:layout_marginLeft="-190dp"
+            android:src="@drawable/app_logo"
+            android:contentDescription="App logo" />
+
+        <!-- Adjusting text view for better display -->
+        <TextView
+            android:id="@+id/realTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingStart="12dp"
+            android:paddingBottom="16dp"
+            android:text="05:25:19"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/settingIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="-190dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onIconClick"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="-10dp"
+            android:contentDescription="App logo"
+            android:src="@drawable/setting4" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="160dp"
+            android:background="@drawable/refresh_button"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Company: Ivan Infotech(XXXX)"
+            android:textColor="#0E1F33"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Device Id : XXXXXX"
+            android:textColor="#0E1F33"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="Gate Name: XXXXXXXX"
+            android:textColor="#0E1F33"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Type : In"
+            android:textColor="#0E1F33"
+            android:textSize="20sp"
+            />
+
+    </LinearLayout>
+    
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/kioskBtn"
+      android:layout_width="match_parent"
+      android:layout_height="70dp"
+      android:text="Enter Kiosk Mode ->"
+      android:textSize="26sp"
+      android:textColor="#FFFFFF"
+      android:layout_marginTop="20dp"
+      android:backgroundTint="#1d97cc"
+      app:cornerRadius="6dp">
+      
+  </com.google.android.material.button.MaterialButton>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="340dp"
+            android:layout_height="82dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="36dp"
+
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/bluetooth">
+                </ImageView>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:text="Device Status"
+                    android:textSize="18dp"
+                    android:lineHeight="25dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:textAlignment="center"/>
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="150dp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="340dp"
+                android:layout_height="36dp"
+
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/tv">
+                </ImageView>
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="21dp"
+                    android:text="Server Status"
+                    android:textSize="18dp"
+                    android:lineHeight="25dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="8dp"
+                    android:textAlignment="center">
+                </TextView>
+                <RadioButton android:id="@+id/radio_pirates"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="150dp"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+
+
+            </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
