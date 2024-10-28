@@ -43,6 +43,10 @@ dependencies {
     implementation ("androidx.navigation:navigation-fragment:2.6.0")  // Check latest version
     implementation ("androidx.navigation:navigation-ui:2.6.0")
 
+    implementation ("com.squareup.okhttp3:okhttp:4.9.0")     // OkHttp core
+    implementation ("com.squareup.okhttp3:okhttp-sse:4.9.0") // OkHttp SSE support
+
+    implementation ("com.launchdarkly:okhttp-eventsource:2.5.0")
     // Use the latest version available
     implementation ("androidx.navigation:navigation-fragment:2.3.5")
     implementation ("androidx.navigation:navigation-ui:2.3.5")
@@ -52,6 +56,8 @@ dependencies {
 
     implementation ("androidx.navigation:navigation-fragment-ktx:2.7.2")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.2")
+
+    implementation ("com.arthenica:ffmpeg-kit-full:6.0-2")
 
 
     implementation(libs.appcompat)

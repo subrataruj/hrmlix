@@ -1,22 +1,22 @@
 package com.example.hrmlix.models;
 
 public class LoginRequest {
-    private String email;
+    private String company_id;
     private String password;
     private String device_id;
 
-    public LoginRequest(String email, String password, String device_id) {
-        this.email = email;
+    public LoginRequest(String company_id, String password, String device_id) {
+        this.company_id = company_id;
         this.password = password;
         this.device_id = device_id;
 
     }
-    public String getEmail() {
-        return email;
+    public String getCompany_id() {
+        return company_id;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCompany_id(String company_id) {
+        this.company_id = company_id;
     }
 
     public String getPassword() {

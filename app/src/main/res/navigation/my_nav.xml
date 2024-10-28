@@ -27,6 +27,12 @@
         <action
             android:id="@+id/action_dashFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_bluetoothFragment"
+            app:destination="@id/bluetoothFragment" />
+        <action
+            android:id="@+id/action_dashFragment_to_serverFragment"
+            app:destination="@id/serverFragment" />
     </fragment>
     <fragment
         android:id="@+id/cameraFragment"
@@ -37,6 +43,33 @@
         android:id="@+id/settingsFragment"
         android:name="com.example.hrmlix.SettingsFragment"
         android:label="fragment_settings"
-        tools:layout="@layout/fragment_settings" />
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settingsFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+        <action
+            android:id="@+id/action_settingsFragment_to_failureFragment3"
+            app:destination="@id/failureFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.hrmlix.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/failureFragment3"
+        android:name="com.example.hrmlix.FailureFragment"
+        android:label="fragment_failure"
+        tools:layout="@layout/fragment_failure" />
+    <fragment
+        android:id="@+id/bluetoothFragment"
+        android:name="com.example.hrmlix.BluetoothFragment"
+        android:label="fragment_bluetooth"
+        tools:layout="@layout/fragment_bluetooth" />
+    <fragment
+        android:id="@+id/serverFragment"
+        android:name="com.example.hrmlix.ServerFragment"
+        android:label="fragment_server"
+        tools:layout="@layout/fragment_server" />
 
 </navigation>

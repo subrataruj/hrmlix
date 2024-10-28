@@ -51,11 +51,11 @@ public class LoginFragment extends Fragment {
 
         //Here the click event occurs
         loginButton.setOnClickListener(v -> {
-            String email = emailEditText.getText().toString();
+            String company_id = emailEditText.getText().toString();
             String password = passwordEditText.getText().toString();
 
-            if (!email.isEmpty() && !password.isEmpty()) {
-                loginUser(email, password, view);
+            if (!company_id.isEmpty() && !password.isEmpty()) {
+                loginUser(company_id, password, view);
             } else {
                 Toast.makeText(getContext(), "Enter email and password", Toast.LENGTH_SHORT).show();
             }
@@ -63,12 +63,12 @@ public class LoginFragment extends Fragment {
     }
 
 
-    private void loginUser(String email, String password, View view) {
+    private void loginUser(String company_id, String password, View view) {
         ApiService apiService = RetrofitClient.getApiService();
 
         String deviceId = "32A12";
 
-        Call<LoginResponse> call = apiService.loginUser(new LoginRequest(email, password, deviceId));
+        Call<LoginResponse> call = apiService.loginUser(new LoginRequest(company_id, password, deviceId));
 
         call.enqueue(new Callback<LoginResponse>() {
             @Override
@@ -78,7 +78,7 @@ public class LoginFragment extends Fragment {
 
                     Navigation.findNavController(view).navigate(R.id.action_loginFragment_to_dashFragment);
                 } else {
-                    Toast.makeText(getContext(), "Login failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getContext(), "Invalid credentials", Toast.LENGTH_SHORT).show();
                 }
             }
 

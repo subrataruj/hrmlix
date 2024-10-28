@@ -11,7 +11,7 @@ import retrofit2.http.POST;
 
 public interface ApiService {
 
-    @POST("user/login")
+    @POST("/company_login")
     @Headers("Content-Type: application/json")
     Call<LoginResponse> loginUser(@Body LoginRequest loginRequest);
 }

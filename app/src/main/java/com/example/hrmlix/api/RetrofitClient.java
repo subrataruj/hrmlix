@@ -17,7 +17,8 @@ public class RetrofitClient {
     public static Retrofit getInstance() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("https://dev14.ivantechnology.in/meterpark/api/v1/")
+//                    .baseUrl("https://dev14.ivantechnology.in/meterpark/api/v1/")
+                    .baseUrl("http://192.168.1.227:5000/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }
